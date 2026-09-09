@@ -5,11 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>English Is Fun 📚</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * {margin: 0; padding: 0; box-sizing: border-box;}
         body {
             font-family: Arial, sans-serif;
             background: linear-gradient(135deg, #4A90E2, #50E3C2);
@@ -22,52 +18,48 @@
             padding: 2rem;
             text-align: center;
         }
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-        p {
-            font-size: 1.2rem;
-            max-width: 600px;
-            margin-bottom: 2rem;
-            line-height: 1.6;
-        }
+        h1 {font-size: 2.5rem; margin-bottom: 0.5rem;}
+        .subtitle {margin-bottom: 2rem; opacity: 0.9;}
         .container {
             background: rgba(255,255,255,0.15);
             padding: 2.5rem;
             border-radius: 20px;
             backdrop-filter: blur(10px);
             box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            max-width: 600px;
+            width: 100%;
         }
-        a {
+        .book-link {
+            display: block;
+            background: rgba(255,255,255,0.2);
             color: #fff;
-            text-decoration: underline;
-            font-weight: bold;
+            text-decoration: none;
+            padding: 0.9rem;
+            margin: 0.6rem 0;
+            border-radius: 12px;
+            font-size: 1.05rem;
+            transition: all 0.3s ease;
         }
-        a:hover {
-            color: #FFD700;
+        .book-link:hover {
+            background: rgba(255,255,255,0.35);
+            transform: translateY(-2px);
         }
-        .footer {
-            margin-top: 3rem;
-            font-size: 0.9rem;
-            opacity: 0.85;
-        }
+        .footer {margin-top: 2rem; font-size: 0.9rem; opacity: 0.85;}
     </style>
 </head>
 <body>
     <div class="container">
         <h1>📖 English Is Fun!</h1>
-        <p>Welcome to your English learning hub! 🎉<br>
-        This is your homepage — you can replace this text with your ebook content, lessons, or links to your other HTML files.</p>
-        
-        <p style="margin-top: 1.5rem; font-size: 1rem;">
-            ✅ Website is live and working!<br>
-            📂 Hosted on GitHub Pages — main branch root
-        </p>
+        <p class="subtitle">Welcome to your English learning hub — choose a book below! 🎉</p>
+
+        <a href="english-is-fun-sample-2.html" class="book-link">📗 English Is Fun — Sample 2</a>
+        <a href="english-made-clear-sample-2.html" class="book-link">📙 English Made Clear — Sample 2</a>
+        <a href="30-survival-phrases-full.html" class="book-link">📕 30 Survival Phrases — Full</a>
+        <a href="math-is-fun-sample.html" class="book-link">📓 Math Is Fun — Sample</a>
     </div>
 
     <div class="footer">
-        &copy; 2026 English Is Fun | Powered by GitHub Pages ✨
+        &copy; 2026 English Is Fun | All books live on GitHub Pages ✨
     </div>
 </body>
 </html>
