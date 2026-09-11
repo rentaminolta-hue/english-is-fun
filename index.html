@@ -1,65 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>English Is Fun 📚</title>
-    <style>
-        * {margin: 0; padding: 0; box-sizing: border-box;}
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #4A90E2, #50E3C2);
-            color: #fff;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 2rem;
-            text-align: center;
-        }
-        h1 {font-size: 2.5rem; margin-bottom: 0.5rem;}
-        .subtitle {margin-bottom: 2rem; opacity: 0.9;}
-        .container {
-            background: rgba(255,255,255,0.15);
-            padding: 2.5rem;
-            border-radius: 20px;
-            backdrop-filter: blur(10px);
-            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
-            max-width: 600px;
-            width: 100%;
-        }
-        .book-link {
-            display: block;
-            background: rgba(255,255,255,0.2);
-            color: #fff;
-            text-decoration: none;
-            padding: 0.9rem;
-            margin: 0.6rem 0;
-            border-radius: 12px;
-            font-size: 1.05rem;
-            transition: all 0.3s ease;
-        }
-        .book-link:hover {
-            background: rgba(255,255,255,0.35);
-            transform: translateY(-2px);
-        }
-        .footer {margin-top: 2rem; font-size: 0.9rem; opacity: 0.85;}
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Sample Pack — 4 Bilingual Learning Books</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Comic Sans MS', 'Segoe UI', Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8fafc;
+    color: #1e293b;
+  }
+  .page {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 20px 50px;
+  }
+  .hero {
+    background: linear-gradient(150deg, #f472b6, #a78bfa 45%, #38bdf8 90%);
+    color: white;
+    text-align: center;
+    padding: 55px 25px 45px;
+    border-radius: 0 0 30px 30px;
+    margin-bottom: 10px;
+  }
+  .hero .emoji-row { font-size: 2.6em; margin-bottom: 10px; }
+  .hero h1 { font-size: 2em; margin: 0 0 8px 0; }
+  .hero p { font-size: 1.05em; opacity: 0.95; margin: 0; }
+  .badge {
+    display: inline-block;
+    background: #fde047;
+    color: #713f12;
+    font-weight: bold;
+    padding: 8px 22px;
+    border-radius: 20px;
+    margin-top: 18px;
+    font-size: 0.95em;
+  }
+  .intro {
+    text-align: center;
+    padding: 25px 10px 5px;
+    color: #475569;
+    font-size: 0.98em;
+    line-height: 1.6;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 25px;
+  }
+  .card {
+    background: white;
+    border: 2px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 22px 22px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.15s, box-shadow 0.15s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  .card:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,0.08); }
+  .card .icon { font-size: 2.6em; flex-shrink: 0; }
+  .card .info { flex: 1; }
+  .card .info h3 { margin: 0 0 4px 0; font-size: 1.2em; }
+  .card .info .vn-title { color: #64748b; font-style: italic; font-size: 0.85em; margin-bottom: 6px; }
+  .card .info p { margin: 0; font-size: 0.9em; color: #64748b; }
+  .card .arrow { font-size: 1.5em; color: #94a3b8; flex-shrink: 0; }
+  .card.math { border-left: 6px solid #f59e0b; }
+  .card.science { border-left: 6px solid #0ea5e9; }
+  .card.eif { border-left: 6px solid #ec4899; }
+  .card.emc { border-left: 6px solid #8b5cf6; }
+  .cta {
+    margin-top: 40px;
+    background: linear-gradient(135deg, #7c3aed, #0369a1);
+    color: white;
+    border-radius: 16px;
+    padding: 30px 25px;
+    text-align: center;
+  }
+  .cta h3 { margin-top: 0; font-size: 1.4em; }
+  .cta-details {
+    background: rgba(255,255,255,0.15);
+    border-radius: 10px;
+    padding: 14px;
+    margin-top: 15px;
+    font-size: 0.92em;
+    text-align: left;
+  }
+  .footer-note {
+    text-align: center;
+    color: #94a3b8;
+    font-size: 0.82em;
+    margin-top: 30px;
+  }
+</style>
 </head>
 <body>
-    <div class="container">
-        <h1>📖 English Is Fun!</h1>
-        <p class="subtitle">Welcome to your English learning hub — choose a book below! 🎉</p>
+<div class="page">
 
-        <a href="english-is-fun-sample-2.html" class="book-link">📗 English Is Fun — Sample 2</a>
-        <a href="english-made-clear-sample-2.html" class="book-link">📙 English Made Clear — Sample 2</a>
-        <a href="30-survival-phrases-full.html" class="book-link">📕 30 Survival Phrases — Full</a>
-        <a href="math-is-fun-sample.html" class="book-link">📓 Math Is Fun — Sample</a>
-    </div>
+  <div class="hero">
+    <div class="emoji-row">📚🔬🔢🗣️</div>
+    <h1>Free Sample Pack</h1>
+    <p>4 Bilingual Learning Books — Try Before You Buy</p>
+    <div class="badge">🎁 100% FREE — No Payment Needed</div>
+  </div>
 
-    <div class="footer">
-        &copy; 2026 English Is Fun | All books live on GitHub Pages ✨
+  <div class="intro">
+    Tap any book below to read its free sample chapters (English + Vietnamese, side by side). Find the one your child — or you — loves most, then grab the full book for just a few dollars!
+  </div>
+
+  <div class="cards">
+    <a class="card eif" href="english-is-fun-sample.html">
+      <div class="icon">🗣️</div>
+      <div class="info">
+        <h3>English Is Fun</h3>
+        <div class="vn-title">Tiếng Anh Thật Vui</div>
+        <p>Kids' edition — bilingual English learning for children</p>
+      </div>
+      <div class="arrow">›</div>
+    </a>
+
+    <a class="card emc" href="english-made-clear-sample.html">
+      <div class="icon">💬</div>
+      <div class="info">
+        <h3>English Made Clear</h3>
+        <div class="vn-title">Tiếng Anh Rõ Ràng</div>
+        <p>Adult edition — real-life English for Vietnamese speakers</p>
+      </div>
+      <div class="arrow">›</div>
+    </a>
+
+    <a class="card math" href="math-is-fun-sample.html">
+      <div class="icon">🔢</div>
+      <div class="info">
+        <h3>Math Is Fun</h3>
+        <div class="vn-title">Toán Học Thật Vui</div>
+        <p>Kids' edition — bilingual math for young learners</p>
+      </div>
+      <div class="arrow">›</div>
+    </a>
+
+    <a class="card science" href="science-is-fun-sample.html">
+      <div class="icon">🔬</div>
+      <div class="info">
+        <h3>Science Is Fun</h3>
+        <div class="vn-title">Khoa Học Thật Vui</div>
+        <p>Kids' edition — bilingual science for curious minds</p>
+      </div>
+      <div class="arrow">›</div>
+    </a>
+  </div>
+
+  <div class="cta">
+    <h3>💙 Love What You Read?</h3>
+    <p>Full books are just $3–$4 each — or grab a launch bundle deal! Message us to get your full personalized copy.</p>
+    <div class="cta-details">
+      <strong>How to order:</strong><br>
+      1. Send payment via <strong>Wise</strong> to <strong>@gregoryw1280</strong><br>
+      2. Send a screenshot via <strong>WhatsApp</strong> (+27 79 294 0299) or <strong>Zalo</strong> (Greg)<br>
+      3. Receive your full personalized copy!
     </div>
+  </div>
+
+  <div class="footer-note">
+    Thank you for exploring our free sample pack! 💙<br>
+    English Is Fun · English Made Clear · Math Is Fun · Science Is Fun
+  </div>
+
+</div>
 </body>
 </html>
